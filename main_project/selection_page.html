@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пошук на сайті</title>
+</head>
+<body>
+    
+
+    <form>
+        <input type="text" id="search" name="search" placeholder="Введіть ключове слово">
+        <button type="submit">Знайти</button>
+    </form>
+    <section class="fiter">
+      <!-- Фільтри для вибору лікаря -->
+      <div>
+          <h2>Фільтри:</h2>
+          <h3>Оплата послуг:</h3>
+          <!-- Фільтр за наявністю декларації -->
+          <section>
+             <p>Безкоштовно:</p>
+                <label>
+                    <input type="checkbox" id="declarationFilter" name="declarationFilter">
+                    При наявності декларації
+                </label>
+                
+                <br>
+                
+                <!-- Фільтр за наявністю направлення -->
+                <label>
+                    <input type="checkbox" id="referralFilter" name="referralFilter">
+                    При наявності направлення
+                </label>
+            </section>
+          <br>
+          
+          <!-- Фільтр платного прийому -->
+          <div class="toggle">
+            <input type="checkbox" id="paymentFilter" name="paymentFilter">
+            <label for="paymentFilter">Платний прийом</label>
+        </div>
+        
+        <!-- Фільтр за статтею лікаря (чоловік/жінка) -->
+        <div class="gender-filter">
+            <h2>Стать лікаря</h2>
+            <label>
+                <input type="radio" name="genderFilter" value="male">
+                Чоловік
+            </label>
+            <label>
+                <input type="radio" name="genderFilter" value="female">
+                Жінка
+            </label>
+        </div>
+        <div class="experience-filter">
+            <h2>Стаж лікаря</h2>
+            <label>
+                <input type="radio" name="experienceFilter" value="0-2">
+                0-2 роки
+            </label>
+            <label>
+                <input type="radio" name="experienceFilter" value="2-3">
+                2-3 роки
+            </label>
+            <label>
+                <input type="radio" name="experienceFilter" value="3-5">
+                3-5 років
+            </label>
+            <label>
+                <input type="radio" name="experienceFilter" value="5-10">
+                5-10 років
+            </label>
+            <label>
+                <input type="radio" name="experienceFilter" value="10+">
+                10+ років
+            </label>
+        </div>
+        <div class="doctor-card">
+            <h2>Сімейний лікар</h2>
+            <p>Сьогодні 1 жовт</p>
+            <hr>
+            <p class="schedule">Ф.І.О - 14.40</p>
+            <hr>
+            <p class="schedule">Умови прийому - 15.00</p>
+            <p>Стаж: 10 років</p>
+            <p>Від 600грн</p>
+            <p>Рейтинг: 4.8</p>
+            <p>При заключеній декларації з цим лікарем - 15.40</p>
+            <hr>
+            <div class="address">
+                <p>Приватна клініка</p>
+                <p>Ф.І.О</p>
+                <p>м. Київ, вул. Єфремова Академіка, 8 А, кабінет 1</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
