@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>Медичні послуги</title>
+    <link rel="stylesheet" href="style_task2.css">
+    <script src="task_2.js"></script>
+    
 </head>
 <body>
     <header>
@@ -12,14 +15,17 @@
             <ul>
                 <li><a href="#чому">Чому Я вибрав цю тему</a></li>
                 <li><a href="#Захворювання">Найпоширеніші захворювання</a></li>
-                <li><a href="#контакти">Контактні дані</a></li>
+                <li><a href="#contact-details">Контактні дані</a></li>
                 <li><a href="#Форма">Форма зворотьнього зв'язку</a></li>
             </ul>
         </nav>
+        <div class="snowflake">❄</div>
     </header>
-
+    
+   
     <main>
         <section id="чому">
+            
             <h2>Чому Я вибрав цю тему</h2>
             <p><span class="letter">Я мав декілька причин вибрати цю тему для лабараторної роботи:</span></p>
             <ol type="i">
@@ -36,7 +42,7 @@
         <section id="Захворювання">
             <h2>Найпоширеніші захворювання</h2>
             <p>Найбільш поширенеми хворобами які приводять до смерті льдини в україні є.</p>
-            <table>
+            <table id="my-table">
                 <caption>Найпоширеніші захворювання серед померших</caption>
                 <thead>
                     <tr>
@@ -89,19 +95,22 @@
                 <label>Оцінка якості прочитаного матеріалу:</label>
                 <input type="radio" id="подобається" name="оцінка" value="подобається">
                 <label for="подобається">Подобається</label>
+
                 <input type="radio" id="потребує доопрацювання" name="оцінка" value="потребує доопрацювання">
                 <label for="потребує доопрацювання">Потребує доопрацювання</label>
+
                 <input type="radio" id="неповний" name="оцінка" value="неповний">
                 <label for="неповний">Неповний</label><br>
+
                 <input type="checkbox" id="згода" name="згода" required>
                 <label for="згода">Згоден з обробкою інформації</label><br>
                 <input type="submit" value="Надіслати">
             </form>
         </section>
     </article>
-
+   
     <footer>
-        <section id="контакти">
+        <section id="contact-details" >
             <p>Контактні дані:</p>
             <address>
                 Email: mamitkoegorb@knu.ua<br>
@@ -109,5 +118,6 @@
             </address>
         </section>
     </footer>
+    <section id="snowfall"></section>
 </body>
 </html>
