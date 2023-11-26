@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Інтерактивні сніжинки</title>
+    <style>
+        body {
+            background: rgb(238, 174, 202);
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Заборона прокрутки */
+        }
+        .snowflake {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url('https://st5.depositphotos.com/63021034/64407/i/450/depositphotos_644078856-stock-photo-the-snowflake-icon-is-simple.jpg'); /* Замініть на ваше зображення сніжинки */
+            background-size: cover;
+            opacity: 0.7;
+            animation: fallingSnowflakes 10s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Функція для створення падаючої сніжинки
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            document.body.appendChild(snowflake);
+
+            const x = Math.random() * window.innerWidth;
+            const y = -20;
+            snowflake.style.left = `${x}px`;
+            snowflake.style.top = `${y}px`;
+
+            const speed = Math.random() * 4 + 2;
+            snowflake.style.animationDuration = `${speed}s`;
+
+            snowflake.addEventListener('animationiteration', () => {
+                document.body.removeChild(snowflake);
+            });
+
+            snowflake.addEventListener('click', () => {
+                // Обробник події при кліку на сніжинку
+                snowflake.style.transform = 'scale(0.5)'; // Зміна розміру сніжинки
+                snowflake.style.backgroundColor = 'blue'; // Зміна кольору сніжинки
+            });
+        }
+
+        // Викликаємо функцію для створення сніжинок
+        setInterval(createSnowflake, 1000);
+    </script>
+</body>
+</html>

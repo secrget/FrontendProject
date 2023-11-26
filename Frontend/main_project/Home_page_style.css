@@ -1,0 +1,356 @@
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff; /* Фоновий колір меню */
+    text-align: right; /* Вирівнювання тексту справа */
+    padding: 0;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px; /* Відстань між пунктами меню */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000; /* Колір тексту */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 30px; /* Зниження тексту вниз */
+}
+.nav a#login {
+    border:solid;
+    background-color: #ffffff; /* Колір фону при наведенні */
+    color: #000000; /* Колір тексту при наведенні */
+    padding: 10px 20px; /* Розмір внутрішніх відступів кнопки */
+    border-radius: 5px; /* Округлені кути */
+}
+
+.nav a#login:hover {
+    background-color: #258AFF; /* Колір фону при наведенні */
+}
+header {
+    height: 570px;
+    width: 100%;
+    background: linear-gradient(65deg, #258AFF, #FFDDF7);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 16px 0 0;
+}
+
+header p {
+    font-size: 19px;
+    margin: 0;
+    padding: 70px 0 0;
+}
+
+.section-container section  {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+.custom-h2 {
+    font-size: 16px; /* Зменшено розмір тексту до 16px */
+    margin: 20px 0; /* Зменшено відступи вгору та вниз */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 10px; /* Зменшено скруглені кути */
+}
+
+.larger-input {
+    font-size: 16px; /* Зменшено розмір тексту до 16px */
+    padding: 10px 20px;
+    margin: 10px 10px; /* Зменшено відступи вгору та вниз */
+    border-radius: 10px; /* Зменшено скруглені кути */
+}
+
+.larger-button {
+    font-size: 16px; /* Зменшено розмір тексту до 16px */
+    padding: 10px 20px;
+    margin: 10px 10px; /* Зменшено відступи вгору та вниз */
+    border-radius: 10px; /* Зменшено скруглені кути */
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    max-width: 1228px;
+    width: 100%;
+    min-height: 453px;
+    align-items: center;
+    padding: 72px 20px 48px 40px;
+    position: relative;
+    margin-top: -200px;
+}
+
+.search-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center; /* Центруємо по горизонталі */
+    align-items: center; /* Центруємо по вертикалі */
+}
+
+.div-searchcards, .div-searchcards-2, .div-searchcards-5 {
+    width: 272px;
+    height: 178px;
+    padding: 16px;
+    align-items: center; /* Центруємо по вертикалі */
+    position: relative;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 50px #636e8c26, 0px 0px 1px #18233414;
+}
+
+.div-searchcards-2, .div-searchcards-5 {
+    height: 126px;
+    padding: 16px;
+}
+.search-cards, .view, .link, .div-searchcards, .div-bubble-bubble, .div, .span-text-text-hfzpg {
+    position: relative;
+}
+
+.div-bubble-bubble, .online-consult-webp, .mob-app-webp, .liki-online-webp, .vaccination-svg, .med {
+    position: absolute;
+    display: inline-block;
+}
+
+.div-bubble-bubble, .div-bubble-bubble-2, .div-bubble-bubble-3 {
+    width: 75px;
+    height: 75px;
+    transform: rotate(90deg);
+    opacity: 0.5;
+}
+
+.div-searchcards-wrapper, .div-wrapper, .heading-wrapper, .heading-margin, .heading-2, .heading-3, .heading-4, .heading-5 {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-wrapper, .heading-2 {
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #222222;
+    font-size: 16px;
+    line-height: 22.4px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.text-wrapper {
+    font-size: 20px;
+}
+
+.p {
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #3e3e3e;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0;
+    width: fit-content;
+    display: inline-block;
+    margin-top: -1px;
+}
+.sec {
+    display: flex; /* Встановлюємо відображення як flex-контейнер */
+    justify-content: space-between; /* Розподіл елементів від лівого до правого боку */
+    align-items: center; /* Вертикальне центрування елементів */
+}
+
+.h {
+    order: -1; /* Переміщуємо h2 нагору */
+    text-align: center;
+}
+
+.instruction-step {
+    text-align: center; /* Центруємо текст всередині кожного блоку */
+    width: 30%; /* Ширина кожного блоку (застосуйте відповідну ширину) */
+}
+
+.instruction-step img {
+    max-width: 100%; /* Робимо зображення адаптивними до ширини батьківського блоку */
+    max-height: 170px; /* Змінюємо максимальну висоту картинки (застосуйте власну висоту) */
+}
+.instruction-step::after {
+    content: "\2192"; /* Додаємо стрілку (Unicode-символ для стрілки вправо) */
+    font-size: 24px; /* Розмір шрифту стрілки (застосуйте власний) */
+    position: absolute;
+    top: 50%;
+    right: -20px; /* Зміщення стрілки вправо (застосуйте власне значення) */
+    transform: translateY(-50%); /* Вертикально центруємо стрілку */
+}
+.h22{
+    order: -1; /* Переміщуємо h2 нагору */
+    text-align: center;
+    padding: 50px;
+}
+.special {
+    background-color: #DAECFF;
+    border-radius: 10px;
+    width: 585px;
+    height: 394px;
+    padding: 30px;
+    margin: 10px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Вирівнюємо текст по правому краю */
+    position: absolute;
+    left: 250px; /* Вказуємо відстань від правого краю */
+}
+
+.special h3 {
+    margin-bottom: 10px;
+    text-align: right; /* Вирівнюємо текст по правому краю */
+}
+
+.special button {
+    margin-top: 230px; /* Розміщуємо кнопку в нижньому правому куті */
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.special button:hover {
+    background-color: darkblue;
+}
+.special-2 {
+    width: fit-content;
+    height: 100px;
+    background-color: #E3E5F6;
+    padding: 10px;
+    border: none;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    left: 950px; /* Вказуємо відстань від правого краю */
+    top: 1515px;
+    border-radius: 10px;
+}
+.special-2:hover{
+    background-color: #FFDDF7;
+}
+.special-2 a {
+    text-decoration: none; /* Видаляємо підкреслення посилань */
+    color: inherit; /* Встановлюємо колір тексту на такий же, як у батьківському елементі *//* Змінюємо вид курсору на текстовий (I-промінь) */
+}
+
+.custom-square {
+    width: 105px;
+    height: 394px;
+    padding: 20px;
+    border: none;
+    background-color: #F9D1D1;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Змінено на justify-content: flex-start */
+    position: absolute;
+    left: 950px;
+    top: 1700px;
+    font-size: 20px;
+}
+
+.custom-square h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-square p {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 10px; /* Встановлюємо відстань між h3 і p */
+}
+
+@media (max-width: 585px) {
+    .custom-square h3 {
+        font-size: 16px;
+    }
+    .custom-square p {
+        font-size: 14px;
+    }
+}
+
+.custom-rectangle {
+    width: 585px;
+    height: 100px;
+    padding: 20px;
+    border: none;
+    background-color: #E3E5F6;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Змінено на justify-content: flex-start */
+    position: absolute;
+    left: 250px;
+    top: 2000px;
+    font-size: 20px;
+}
+.custom-rectangle h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-rectangle p {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 10px; /* Встановлюємо відстань між h3 і p */
+}
+.servise {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    background: linear-gradient(65deg, #258AFF, #FFDDF7);
+    position: absolute;
+    top: 2200px;
+    font-size: 20px;
+}
+.servise h2{
+    margin: 20px 20px 0 20px; /* Знизу додаємо 20px відступу */
+}
+.servise ul {
+    list-style: none; /* Видаляємо означення списку */
+    padding: 0;
+    display: flex; /* Робимо елементи розташованими горизонтально */
+}
+
+.servise li {
+    margin: 20px 20px 0 20px; /* Знизу додаємо 20px відступу */
+}
+
+.servise p {
+    font-size: 16px; /* Розмір тексту */
+}
+.servise img {
+    width: 200x; /* Змінюємо ширину зображення */
+    height: 200px;
+    position: absolute; /* Встановлюємо абсолютне позиціонування */
+    right: 400px; /* Відстань від правого краю */
+    bottom: 0px; /* Відстань від нижнього краю */
+}
