@@ -1,0 +1,65 @@
+
+body {
+    margin: 0; /* Встановлюємо відсутність зовнішнього відступу */
+    padding: 0; /* Встановлюємо відсутність внутрішнього відступу */
+    height: 100vh; /* Встановлюємо висоту 100% від видимого вікна */
+    background: linear-gradient(65deg, #258AFF, #f690e1); /* Градієнтний фон */
+    font-family: Arial, sans-serif; /* Встановлюємо шрифт для всього документу */
+    text-align: center; /* Вирівнюємо текст по центру */
+}
+h1 {
+    text-align: center; /* Відцентрування тексту */
+    margin-top: 50px; /* Встановлення відступу зверху  */
+    font-size: 35px; /* Збільшення розміру шрифту */
+}
+p {
+    text-align: center; /* Вирівнюємо текст по центру */
+}
+#loginLink {
+    color: blue;
+}
+#loginLink:hover {
+    color: white;
+}
+
+#registrationLink {
+    color: black; /* Інший колір для "Реєстрації" */
+}
+#registrationLink:hover {
+    color: white; /* Інший колір для "Реєстрації" */
+}
+p a {
+    text-decoration: none; /* Видаляємо підкреслення для посилань */
+    color: #333; /* Колір тексту посилань */
+    margin: 0 100px; /* Встановлюємо відстань з обох сторін між посиланнями і символом | */
+}
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 1.2em; /* Збільшуємо розмір шрифту для label */
+    margin-bottom: 10px; /* Додатковий відступ між label та input */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 400px; /* Встановлюємо бажану довжину */
+    height: 30px; /* Встановлюємо бажану висоту */
+    padding: 10px;
+    font-size: 1.2em; /* Збільшуємо розмір шрифту для input */
+    margin-bottom: 20px; /* Додатковий відступ після input */
+    border-radius: 25px; /* Зкруглення кутів */
+}
+
+#buttone {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em; /* Збільшуємо розмір шрифту для кнопки */
+    border-radius: 25px;
+}
+

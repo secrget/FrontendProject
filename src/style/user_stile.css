@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+.rotatingImage {
+    transition: transform 5s linear;
+    transformOrigin: center;
+}
+.buttone {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em; /* Збільшуємо розмір шрифту для кнопки */
+    border-radius: 25px;
+    position: absolute;
+    top: 900px; /* Відстань від верхнього краю сторінки */
+    left: 50px; /* Відстань від правого краю сторінки */
+}
+button:active {
+    background-color: #f690e1; 
+}
+#rocord {
+    position: absolute;
+    top: 10px; /* Відстань від верхнього краю сторінки */
+    right: 10px; /* Відстань від правого краю сторінки */
+}
+#rocord{
+    width: 1000px;
+    height: 250px;
+    border-style: inset;
+    background: rgb(160, 170, 179);
+    border-radius: 25px;
+    text-align: center; /* Центруємо текст по горизонталі */
+    line-height: 40px; /* Встановлюємо висоту рівною висоті контейнера для вертикального центрування */
+}
+#rocord p {
+    font-size: 15px; /* Збільшення розміру шрифту */
+    left: 10px; /* Відстань від лівого краю секції */
+    top: 10px; /* Відстань від верхнього краю секції */
+}
+
+#rocord table {
+    width: calc(100% - 20px); /* Встановлюємо ширину таблиці віднімаючи відстань з лівого та правого боку */
+    margin: 0 auto; /* Центруємо таблицю горизонтально в секції */
+    top: 20px;
+}
+
+#rocord th, #rocord td {
+    padding: 10 100px;
+}
+#inform_treatment {
+    position: absolute;
+    top: 300px; /* Відстань від верхнього краю сторінки */
+    right: 10px; /* Відстань від правого краю сторінки */
+}
+#inform_treatment{
+    width: 1000px;
+    height: 300px;
+    border-style: inset;
+    background: rgb(160, 170, 179);
+    border-radius: 25px;
+    text-align: left 0.1px; /* Центруємо текст по горизонталі */
+    line-height: 40px; /* Встановлюємо висоту рівною висоті контейнера для вертикального центрування */
+}
+.disease-history{
+    position: absolute;
+    top: 650px; /* Відстань від верхнього краю сторінки */
+    right: 10px; /* Відстань від правого краю сторінки */
+}
+.disease-history{
+    width: 1000px;
+    height: 300px;
+    border-style: outset;
+    background: rgb(160, 170, 179);
+    border-radius: 25px;
+    text-align: left; /* Центруємо текст по горизонталі */
+    line-height: 40px; /* Встановлюємо висоту рівною висоті контейнера для вертикального центрування */
+}
+
